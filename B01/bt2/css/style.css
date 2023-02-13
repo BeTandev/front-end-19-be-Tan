@@ -1,0 +1,9 @@
+.red{
+    color: red;
+}
+.wrapper-img img{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-right: 5px;
+}
