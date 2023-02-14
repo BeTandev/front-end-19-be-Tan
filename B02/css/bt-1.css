@@ -6,6 +6,11 @@
 
 body{
     padding: 0 50px;
+    background-color: #e8e6f6;
+}
+
+section{
+    border: 1px solid black;
 }
 
 .main-head{
@@ -40,6 +45,27 @@ nav ul a li:hover{
     background-color: red;
 }
 
-#frontend-course h2{
-    background-color: blue;
+main{
+    padding: 20px 10px;
+    background-color: white;
+}
+.wrap-in-frontend-course{
+    background-color: rgb(116 116 204);
+}
+
+.wrap-in-frontend-course h2{
+    color: white;
+    margin: 5px;
+}
+
+.wrap-in-frontend-course figure figcaption{
+    padding: 10px;
+}
+
+.wrap-in-frontend-course figure img{
+    width: 100%;
+}
+
+#frontend-course p{
+    padding: 15px 10px;
 }
