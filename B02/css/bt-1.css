@@ -13,6 +13,12 @@ section{
     border: 1px solid black;
 }
 
+.clearly::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .main-head{
     background-color: blue;
     color: white;
@@ -55,7 +61,7 @@ main{
 
 .wrap-in-frontend-course h2{
     color: white;
-    margin: 5px;
+    padding: 5px;
 }
 
 .wrap-in-frontend-course figure figcaption{
@@ -68,4 +74,19 @@ main{
 
 #frontend-course p{
     padding: 15px 10px;
+}
+
+#other-course{
+    margin-top: 15px;
+}
+
+#other-course h2{
+    background-color: rgb(116 116 204);
+    padding: 5px;
+    color: white;
+}
+
+.img-other-course img{
+    float: left;
+    width: 250px;
 }
