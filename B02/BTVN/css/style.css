@@ -6,6 +6,16 @@
 section{
     background-color: white;
 }
+.clearly::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.all-h2{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
 
 header h1{
     background-color: black;
@@ -33,8 +43,13 @@ main{
     padding: 0 50px;
     background-color: #e8e6f6;
     padding-top: 15px;
+    padding-bottom: 20px;
 }
 
+#phan-dau{
+    padding: 10px;
+    margin-bottom: 20px;
+}
 #phan-dau img{
     display: block;
     margin: auto;
@@ -45,11 +60,6 @@ main{
     margin: 10px 0;
 }
 
-#information h2{
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-}
 #information p{
     padding: 15px 10px;
 }
@@ -71,8 +81,42 @@ main{
 #students{
     margin-top: 15px;
 }
-#students h2{
-    background-color: black;
+#students p{
+    padding: 15px 10px;
+}
+
+article{
+    clear: both;
+    background-color: white;
+    margin-top: 15px;
+}
+.wrap-hinh-anh{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 5px;
+}
+.hinh-anh{
+    float: left;
+    border: 1px solid black;
+    padding: 8px 80px;
+}
+article img{
+    border: 5px solid orangered;
+    height: 200px;
+    width: 150px;
+}
+
+footer{
+    padding: 15px 50px;
+    background-color: green;
     color: white;
-    padding: 10px 15px;
+}
+footer ul{
+    margin-bottom: 5px;
+}
+footer ul a{
+    color: white;
+}
+footer ul a li{
+    display: inline;
 }
