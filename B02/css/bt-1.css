@@ -13,6 +13,11 @@ section{
     border: 1px solid black;
 }
 
+article{
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
 .clearly::after{
     clear: both;
     content: "";
@@ -89,4 +94,28 @@ main{
 .img-other-course img{
     float: left;
     width: 250px;
+}
+
+article h2{
+    background-color: rgb(116 116 204);
+    padding: 5px;
+    color: white;
+}
+
+.wrap-in-article p{
+    padding: 10px;
+}
+
+.wrap-in-article p i date{
+    color: rgb(251, 1, 118);
+}
+
+footer{
+    background-color: blue;
+    padding: 15px;
+    margin: 15px 0;
+}
+footer p{
+    text-align: center;
+    color: white;
 }
