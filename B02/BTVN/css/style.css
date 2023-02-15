@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+section{
+    background-color: white;
+}
+
+header h1{
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+}
+header h1 span{
+    color: red;
+}
+header nav{
+    background-color: cadetblue;
+    padding: 15px 50px;
+    color: white;
+}
+header ul a{
+    color: white;
+}
+header ul a li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+
+main{
+    padding: 0 50px;
+    background-color: #e8e6f6;
+    padding-top: 15px;
+}
+
+#phan-dau img{
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}
+#phan-dau h2{
+    text-align: center;
+    margin: 10px 0;
+}
+
+#information h2{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+#information p{
+    padding: 15px 10px;
+}
+.div-information{
+    background-color: rgb(91, 90, 110);
+    padding: 15px 10px;
+}
+.div-information ul a{
+    text-decoration: none;
+    color: white;
+}
+.div-information ul a li{
+    list-style: none;
+    display: inline;
+    background-color: rgb(255, 181, 43);
+    padding: 4px 6px;
+}
+
+#students{
+    margin-top: 15px;
+}
+#students h2{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
