@@ -1,0 +1,113 @@
+:root{
+    --background: green;
+    --background-child: red;
+    --size-width: 200px;
+    --size-height: 100px;
+    --size-width-child: 80px;
+    --size-height-child: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.Top-Left,
+.Top-Right,
+.Bottom-Left,
+.Bottom-Right,
+.Top-Center,
+.Right-Center,
+.Bottom-Center,
+.Left-Center,
+.Center-Center{
+    background-color: var(--background);
+    width: var(--size-width);
+    height: var(--size-height);
+}
+
+.Top-Left{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Top-Right{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.Bottom-Left{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.Bottom-Right{
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.Top-Center{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Bottom-Center{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Left-Center{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Right-Center{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Center-Center{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.CTL,
+.CTR,
+.CBR,
+.CBL{
+    width: var(--size-width-child);
+    height: var(--size-height-child);
+    background-color: var(--background-child);
+    position: absolute;
+}
+
+.CTL{
+    bottom: var(--size-height);
+    right: var(--size-width);
+}
+.CTR{
+    bottom: var(--size-height);
+    left: var(--size-width);
+}
+.CBR{
+    top: var(--size-height);
+    left: var(--size-width);
+}
+.CBL{
+    top: var(--size-height);
+    right: var(--size-width);
+}

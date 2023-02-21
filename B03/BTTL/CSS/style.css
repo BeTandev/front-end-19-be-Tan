@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+    padding: 15px;
+}
+ul{
+    list-style: none;
+}
+section{
+    margin-top: 15px;
+}
+
+header,section,article{
+    background-color: white;
+    max-width: 650px;
+    padding: 17px 15px;
+    box-shadow: 2px 5px 5px;
+}
+header ul li{
+    display: inline-block;
+}
+
+
+#Frontend-offline h2{
+    margin-bottom: 10px;
+}
+.course{
+    width: 100%;
+}
+.text-under-img{
+    margin-bottom: 13px;
+}
+.button-front-end a{
+    width: 200px;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    color: white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
