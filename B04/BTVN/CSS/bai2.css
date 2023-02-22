@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+table{
+    margin: auto;
+    text-align: left;
+}
+th{
+    padding: 10px;
+    height: 30px;
+}
+
+.title{
+    background-color: blueviolet;
+    display: block;
+    color: white;
+}
+.row{
+    background-color: rgb(214, 214, 214);
+    display: block;
+}
+.number{
+    width: 35px;
+}
+.information{
+    width: 300px;
+    line-height: 25px;
+}
+.information span{
+    font-weight: 100;
+}
+.image{
+    width: 150px;
+    margin-left: 10px;
+}
+.image img{
+    width: 100%;
+}
+.status{
+    width: 140px;
+}
+.status span{
+    background-color: green;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: 100;
+    color: white;
+}
+.sort{
+    width: 60px;
+}
+.sort p{
+    width: 90%;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 5px;
+}
+.create-new,
+.edit{
+    width: 160px;
+}
+.create-new span,
+.create-new date,
+.edit span,
+.edit date{
+    font-weight: 100;
+}
+.action{
+    width: 120px;
+}
+.edit-icon{
+    background-color: greenyellow;
+    padding: 10px 5px;
+    border-radius: 100%;
+}
+.remove,
+.move{
+    background-color: red;
+    padding: 10px 7px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+.move{
+    background-color: grey;
+}
