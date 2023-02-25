@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 500px;
+    padding: 10px;
+    background-color: greenyellow;
+    margin: 30px auto;
+    text-align: center;
+}
+.wrap-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.first{
+    background-color: white;
+}
+.second{
+    background-color: blue;
+}
+.wrap-icon i{
+    line-height: 60px;
+    font-size: 30px;
+}
+.first i{
+    color: blue;
+}
+.second i{
+    color: white;
+}
