@@ -62,6 +62,7 @@
     background-color: #6b496e;
     color: white;
     border: 1px solid grey;
+    cursor: pointer;
 }
 .form-group-1 a{
     text-decoration: none;
