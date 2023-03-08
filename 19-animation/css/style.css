@@ -1,0 +1,92 @@
+:root{
+    --time: 0.4s;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  margin: 50px auto;
+  position: relative;
+}
+
+.box::before{
+  content: "";
+  display: block;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  right: 100%;
+  transition: 0.4s;
+  transition-delay: 1.2s;
+}
+.box::after{
+  content: "";
+  display: block;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  left: 100%;
+  right: 0;
+}
+
+.box::before {
+  top: 0;
+}
+
+.box::after {
+  bottom: 0;
+  transition: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.box:hover::before{
+  right: 0;
+  transition: 0.4s;
+}
+.box:hover::after{
+    left: 0;
+    transition: 0.4s;
+    transition-delay: 0.8s;
+}
+
+.box span::before{
+    content: "";
+    display: block;
+    width: 10px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    transition: 0.4s;
+}
+.box:hover span::before{
+    top: 0;
+    transition: 0.4s;
+    transition-delay: 1.2s;
+}
+.box span::after{
+    display: block;
+    content: "";
+    width: 10px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 100%;
+    transition: 0.4s;
+    transition-delay: 0.8s;
+}
+.box:hover span::after{
+    bottom: 0;
+    transition: 0.4s;
+    transition-delay: 0.4s;
+}

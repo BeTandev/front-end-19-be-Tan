@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 50px auto;
+    position: relative;
+}
+.box::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    background-color: green;
+}
+.box:hover::before{
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
