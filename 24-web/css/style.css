@@ -513,7 +513,59 @@ header .content{
 
 
 footer{
-    
+    padding: 80px 0;
+    background-color: white;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.content-footer{
+    width: calc(100% / 4 - 30px);
+}
+.content-footer strong{
+    display: block;
+    margin-bottom: 20px;
+}
+.content-footer a{
+    color: black;
+}
+.p-logo-footer{
+    font-size: 14px;
+    margin-top: 20px;
+    color: var(--xam);
+}
+.p2-logo-footer{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.p2-logo-footer span{
+    color: var(--blue);
+}
+.a-list a{
+    display: block;
+    margin-top: 10px;
+    color: var(--xam);
+}
+.wrap-icon-footer{
+    display: block;
+    margin-bottom: 10px;
+}
+.wrap-icon-footer i{
+    width: 20px;
+    float: left;
+}
+.facebook{
+    color: blue;
+}
+.twitter{
+    color: #55acee;
+}
+.linkedin{
+    color: #009fdc;
+}
+.dribbble{
+    color: #e9478a;
 }
 
 /* RESPONSIVE */
