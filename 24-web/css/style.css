@@ -712,7 +712,11 @@ footer{
     .container-Editor{
         flex-wrap: wrap;
     }
+    .box-Editor{
+        flex-wrap: wrap;
+    }
     .in-box-Editor{
+        width: calc(100% - 30px);
         margin-bottom: 30px;
     }
 
