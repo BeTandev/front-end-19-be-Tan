@@ -211,7 +211,6 @@ header .content{
 }
 .box-Editor{
     display: flex;
-    flex-wrap: wrap;
     margin: 0 -15px;
 }
 .in-box-Editor{
@@ -648,8 +647,13 @@ footer{
     }
 
     
+    #Editor .container-Editor{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
     #Editor .Editor-Pick{
-        width: calc(100% - 30px);
+        width: calc(100%);
     }
     #Editor .Topics{
         margin-top: 50px;
@@ -657,6 +661,13 @@ footer{
     }
     .content-topics-list i{
         font-size: 25px;
+    }
+    .box-Editor{
+        width: calc(100% + 30px);
+    }
+    .in-box-Editor{
+        width: calc(50% - 30px);
+        margin: 0 15px;
     }
 
 
