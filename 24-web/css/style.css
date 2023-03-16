@@ -3,6 +3,7 @@
     --xam: #718096;
     --blue: #5a67d8;
     --shadow: 0px 11px 26px 0px rgba(0,0,0,0.1);
+    --shadow-box: 1px 2px 5px rgba(0, 0, 0, 0.15);
     --lineheight: 25px;
 }
 *{
@@ -17,6 +18,7 @@
 }
 a{
     text-decoration: none;
+    color: black;
 }
 ul{
     list-style: none;
@@ -28,13 +30,24 @@ img{
 body{
     font-family: 'Roboto', sans-serif;
 }
+#hero,
+#Editor,
+#Top-Pick,
+#Fashion-and-style,
+#Beauty,
+#Trending,
+#Subscrise-form,
+footer{
+    padding: 80px 0;
+    box-shadow: var(--shadow);
+}
 
 
 
 /* HEADER */
 header{
     background-color: white;
-    padding: 30px 0;
+    padding: 30px s0;
     box-shadow: var(--shadow);
 }
 header .content{
@@ -94,9 +107,7 @@ header .content{
 
 /* HERO SECTION */
 #hero{
-    padding: 80px 0;
     background-color: #f4f4f4;
-    box-shadow: var(--shadow);
 }
 .row{
     display: flex;
@@ -177,7 +188,6 @@ header .content{
 
 /* EDITOR */
 #Editor{
-    padding: 80px 0;
     background-color: #f8f9fa;
 }
 .container-Editor{
@@ -201,6 +211,7 @@ header .content{
 }
 .box-Editor{
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -15px;
 }
 .in-box-Editor{
@@ -208,7 +219,7 @@ header .content{
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-box);
 }
 .img-in-box-Editor{
     margin-bottom: 25px;
@@ -233,13 +244,13 @@ header .content{
 .author-info{
     margin-left: 15px;
 }
-.author-info .author-info-first{
+.author-info .author-info-name{
     font-weight: 500;
 }
 .wrap-author-info-second{
     display: flex;
 }
-.author-info .author-info-second{
+.author-info .author-info-date{
     color: var(--xam);
     font-size: 13px;
     margin-top: 5px;
@@ -258,7 +269,7 @@ header .content{
     background-color: white;
     border-radius: 15px;
     margin-top: 15px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-box);
     display: flex;
 }
 .Editor-Advertise p{
@@ -287,7 +298,7 @@ header .content{
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 15px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-box);
     cursor: pointer;
 }
 .content-topics-list i{
@@ -318,13 +329,12 @@ header .content{
 
 
 #Top-Pick{
-    padding: 80px 0;
     background-color: white;
-    box-shadow: var(--shadow);
 }
 #Top-Pick .wrap-box-Top-Pick{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #Top-Pick .wrap-box-Top-Pick .box-Top-Pick{
     width: calc(100% / 3 - 30px);
@@ -379,7 +389,6 @@ header .content{
 
 
 #Fashion-and-style{
-    padding: 80px 0;
     background-color: #f8f9fa;
 }
 .wrap-h2-and-a{
@@ -390,6 +399,7 @@ header .content{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .h2-Fashion-and-style{
     margin-bottom: 0;
@@ -404,6 +414,7 @@ header .content{
     width: calc(100% / 3 - 30px);
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: var(--shadow-box);
 }
 .wrap-in-box-Fashion-and-style{
     padding: 20px;
@@ -412,7 +423,6 @@ header .content{
 
 
 #Beauty{
-    padding: 80px 0;
     background-color: #f6f6f6;
 }
 .content-Beauty{
@@ -427,30 +437,37 @@ header .content{
     margin-top: 20px;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: var(--shadow-box);
 }
 .box-content-Beauty .img-box-content-Beauty{
     width: 30%;
 }
 .in-box-content-Beauty{
+    display: flex;
+    flex-direction: column; 
     padding: 20px;
     background-color: white;
 }
 
 
 #Trending{
-    padding: 80px 0;
     background-color: #f8f9fa;
 }
 .wrap-box-Trending{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .box-Trending{
     width: calc(50% - 30px);
     display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .img-Trending-1{
     width: 30%;
+    object-fit: cover;
 }
 .content-box-Trending{
     padding: 20px;
@@ -469,12 +486,12 @@ header .content{
 
 
 #Subscrise-form{
-    padding: 80px 0;
     background-color: #f7f7f7;
 }
 #Subscrise-form .container-Subscrise-form{
     background-color: white;
     padding: 80px 0;
+    border-radius: 15px;
 }
 .container-Subscrise-form h2,
 .container-Subscrise-form p,
@@ -483,7 +500,6 @@ header .content{
 }
 .container-Subscrise-form h2{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
 }
 .container-Subscrise-form p{
     margin-top: 10px;
@@ -513,11 +529,11 @@ header .content{
 
 
 footer{
-    padding: 80px 0;
     background-color: white;
 }
 .container-footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .content-footer{
@@ -525,19 +541,19 @@ footer{
 }
 .content-footer strong{
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .content-footer a{
     color: black;
 }
 .p-logo-footer{
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: var(--xam);
 }
 .p2-logo-footer{
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .p2-logo-footer span{
     color: var(--blue);
@@ -567,28 +583,199 @@ footer{
 .dribbble{
     color: #e9478a;
 }
+.bars-line{
+    display: none;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 1200px) {
     .container{
         max-width: 960px;
     }
+    header{
+        padding: 30px 0;
+    }
+    .content-box-Top_pick{
+        top: 120px;
+    }
+    .wrap-in-box-Fashion-and-style{
+        font-size: 20px;
+    }
+    .post-author{
+        margin-bottom: auto;
+    }
+    .box-content-Beauty .img-box-content-Beauty {
+        width: 40%;
+    }
+    .img-Trending-1{
+        width: 40%;
+    }
 }
+
+
 @media screen and (max-width: 992px) {
     .container{
         max-width: 720px;
     }
+    .form-search{
+        display: none;
+    }
+    .bar-button{
+        padding: 10px 13px;
+        background-color: var(--blue);
+        border-radius: 10px;
+    }
+    .bars-line{
+        display: unset;
+        font-size: 20px;
+        color: white;
+    }
+    .main-menu{
+        display: none;
+    }
+
     #hero .category-list .col{
         width: calc(50% - 30px);
+    }
+    .category-item i{
+        font-size: 25px;
+    }
+    #hero .article .col.info{
+        width: calc(100% - 30px);
+    }
+    #hero .article .col.thumb{
+        width: calc(100% / 3 * 2  - 30px);
+    }
+
+    
+    #Editor .Editor-Pick{
+        width: calc(100% - 30px);
+    }
+    #Editor .Topics{
+        margin-top: 50px;
+        width: calc(100% - 30px);
+    }
+    .content-topics-list i{
+        font-size: 25px;
+    }
+
+
+    #Top-Pick .wrap-box-Top-Pick .box-Top-Pick{
+        width: calc(100% / 2 - 15px);
+        margin-bottom: 30px;
+    }
+
+
+    .content-Fashion-and-style .box-Fashion-and-style{
+        width: calc(50% - 30px);
+    }
+    .box-content-Beauty{
+        width: 100%;
+    }
+    .box-content-Beauty .in-box-content-Beauty h3{
+        font-size: 25px;
+    }
+
+
+    .box-Trending{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .content-footer{
+        width: calc(100% / 3 - 30px);
+    }
+    .logo-footer{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 @media screen and (max-width: 768px) {
     .container{
         max-width: 540px;
     }
+
+
+    .container-Editor{
+        flex-wrap: wrap;
+    }
+    .in-box-Editor{
+        margin-bottom: 30px;
+    }
+
+
+    #Top-Pick .wrap-box-Top-Pick .box-Top-Pick{
+        width: 100%;
+    }
+    
+
+    .content-Fashion-and-style .box-Fashion-and-style{
+        width: 100%;
+        margin-bottom: 20px;
+    }    
+
+    /* .wrap-input-Subscrise-form{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    .wrap-input-Subscrise-form input{
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .wrap-input-Subscrise-form button{
+        width: 130px;
+        height: 40px;
+    }
 }
 @media screen and (max-width: 576px) {
     .container{
         max-width: 100%;
     }
+
+    .in-box-Editor img{
+        margin-bottom: 0px;
+    }
+
+    .wrap-in-box-Fashion-and-style h3,
+    .box-content-Beauty .in-box-content-Beauty h3{
+        font-size: 20px;
+    }
+
+    .box-content-Beauty,
+    .box-Trending{
+        flex-direction: column;
+    }
+    .box-content-Beauty .img-box-content-Beauty,
+    .img-Trending-1{
+        width: 100%;
+    }
+
+    .container-Subscrise-form .wrap-input-Subscrise-form{
+        padding: 30px;
+    }
+    .wrap-input-Subscrise-form input,
+    .wrap-input-Subscrise-form button{
+        width: 100%;
+    }
+
+    
+    .content-footer .logo-footer{
+        display: block;
+        width: 100%;
+    }
+    .other-content{
+        margin-bottom: 50px;
+        width: calc(50% - 30px);
+    }
+    .other-content strong{
+        margin-bottom: 25px;
+    }
+
 }
+
+/* Cách để phần tác giả căn theo phía dưới của box */
+/* Cách căn giữa .box-content-Beauty .in-box-content-Beauty*/
