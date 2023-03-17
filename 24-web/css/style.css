@@ -47,7 +47,7 @@ footer{
 /* HEADER */
 header{
     background-color: white;
-    padding: 30px s0;
+    padding: 30px 0;
     box-shadow: var(--shadow);
 }
 header .content{
