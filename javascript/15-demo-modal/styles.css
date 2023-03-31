@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  padding: 15px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f8fa;
+}
+
+.course {
+  text-align: center;
+  padding: 30px;
+  max-width: 992px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(76, 87, 125, 0.02);
+}
+
+.course-desc {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.course-thumb {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.btn-register,
+.btn-cancel {
+  background-color: #009ef7;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  background-color: #0095e8;
+}
+
+.btn-cancel {
+  background-color: #F9F9F9;
+  color: #7E8299;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.685);
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 992px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  animation: slide ease 0.8s;
+}
+
+.modal-title {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+.modal-footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+.modal-close:hover {
+  color: #0095e8;
+}
+
+.plan {
+  display: flex;
+  margin-top: 32px;
+}
+
+.plan>div {
+  flex: 1;
+}
+
+.plan-type input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+.plan-type label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dashed #E1E3EA;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.plan-type label.active {
+  background-color: #009ef7;
+  color: white;
+}
+
+.plan-name {
+  display: flex;
+}
+
+.plan-name h3 {
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.plan-price {
+  font-size: 39px;
+  font-weight: 600;
+}
+
+.plan-price span {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.plan-info {
+  margin-left: 20px;
+  background-color: #F9F9F9;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.plan-info li {
+  color: #5E6278;
+  display: flex;
+  align-items: top;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.plan-info li i {
+  margin-right: 10px;
+  color: #50cd89;
+}
+
+.plan-info-item {
+  display: none;
+}
+
+.plan-info-item.active {
+  display: block;
+}
+
+.slide-up {
+  animation: slideUp ease 0.8s;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}

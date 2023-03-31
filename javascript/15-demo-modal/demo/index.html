@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.51);
+      display: none;
+      z-index: 99;
+    }
+
+    .modal-content {
+      width: 200px;
+      padding: 20px;
+      background-color: white;
+      margin: auto;
+      margin-top: 50px;
+      animation: slideDown ease 0.8s;
+    }
+
+    label {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid blue;
+      cursor: pointer;
+    }
+
+    label.active {
+      background-color: blue;
+      color: white;
+    }
+
+    .content-item {
+      display: none;
+    }
+
+    .content-item.active {
+      display: block;
+    }
+
+    .slideUp {
+      animation: slideUp ease 0.8s;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50%);
+      }
+
+      to {
+        transform: translateY(0);
+
+      }
+    }
+
+
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(-50%);
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Noi dung ben duoi</h1>
+  <button class="btn-show-modal">Show MOdal</button>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="labels">
+        <label for="plan1">
+          <div>
+            <input type="radio" name="plan" id="plan1"> plan1
+          </div>
+        </label>
+        <label for="plan2">
+          <div><input type="radio" name="plan" id="plan2"> plan2 </div>
+        </label>
+        <label for="plan3">
+          <div>
+            <input type="radio" name="plan" id="plan3"> plan3
+          </div>
+        </label>
+      </div>
+      <div class="contents">
+        <div class="content-item">Content 1</div>
+        <div class="content-item">Content 2</div>
+        <div class="content-item">Content 3</div>
+      </div>
+      <div>
+        <button class="btn-close-modal">Close Modal</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    let modal = document.querySelector('.modal');
+    let modalContent = document.querySelector('.modal-content');
+    document.querySelector('.btn-show-modal').addEventListener('click', function () {
+      modal.style.display = 'block';
+    });
+
+    document.querySelector('.btn-close-modal').addEventListener('click', function () {
+      modalContent.classList.add('slideUp');
+      setTimeout(function () {
+        modal.style.display = 'none';
+        modalContent.classList.remove('slideUp');
+      }, 500);
+    });
+
+    let checkboxes = document.querySelectorAll('input[name="plan"]');
+    let contentItems = document.querySelectorAll('.content-item');
+    for (let i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].addEventListener('change', function () {
+        removeActive();
+        checkboxes[i].closest('label').classList.add('active');
+        contentItems[i].classList.add('active');
+      })
+    }
+
+    function removeActive() {
+      let labels = document.querySelectorAll('label');
+      for (let i = 0; i < labels.length; i++) {
+        labels[i].classList.remove('active');
+        contentItems[i].classList.remove('active');
+      }
+    }
+  </script>
+</body>
+
+</html>

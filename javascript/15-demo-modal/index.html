@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="course">
+      <div class="course-info">
+        <h1 class="course-title">LẬP TRÌNH VIÊN FRONTEND - 1 KÈM 1</h1>
+        <p class="course-desc">
+          Chương trình học online 1 kèm 1 này sẽ cung cấp đầy đủ các kiến thức giúp học viên có thể trở thành một lập
+          trình web Frontend thực thụ sau khi đã kết thúc xong khóa học.</p>
+        <button type="button" class="btn-register" id="btn-register">Register</button>
+      </div>
+      <img src="./images/thumb.jpeg" class="course-thumb" alt="Frontend" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <i class="fa-solid fa-xmark modal-close"></i>
+      <h2 class="modal-title">Đăng ký</h2>
+      <div class="modal-body">
+        <div class="plan">
+          <div class="plan-type">
+            <label for="plan-video-only">
+              <div class="plan-name">
+                <input type="radio" name="plan" id="plan-video-only">
+                <h3>Video Only</h3>
+              </div>
+              <div class="plan-price">
+                <span>$</span> 39
+              </div>
+            </label>
+            <label for="plan-video-review" class="active">
+              <div class="plan-name">
+                <input type="radio" name="plan" id="plan-video-review" checked>
+                <h3>Video & Review</h3>
+              </div>
+              <div class="plan-price">
+                <span>$</span> 399
+              </div>
+            </label>
+            <label for="plan-video-live">
+              <div class="plan-name">
+                <input type="radio" name="plan" id="plan-video-live">
+                <h3>Video & Live</h3>
+              </div>
+              <div class="plan-price">
+                <span>$</span> 999
+              </div>
+            </label>
+          </div>
+          <div class="plan-info">
+            <div>
+              <ul class="plan-info-item">
+                <li><i class="fa-regular fa-circle-check"></i> Học viên tự học qua các video đã được quay sẵn </li>
+                <li><i class="fa-regular fa-circle-check"></i> Truy cập toàn bộ video, source code và tài liệu của khóa
+                  học </li>
+                <li><i class="fa-regular fa-circle-check"></i> Hỗ trợ giải đáp thắc mắc qua form hỏi đáp với giảng viên
+                  tại từng video </li>
+              </ul>
+              <ul class="plan-info-item active">
+                <li><i class="fa-regular fa-circle-check"></i> Đã bao gồm gói "Video Only"</li>
+                <li><i class="fa-regular fa-circle-check"></i> Học viên có group hỗ trợ riêng cũng 2 giảng viên</li>
+                <li><i class="fa-regular fa-circle-check"></i> Video nhận xét riêng từng bài tập từ giảng viên</li>
+                <li><i class="fa-regular fa-circle-check"></i> Xác nhận hoàn thành khóa học và xác nhận thực tập doanh
+                  nghiệp tại ZendVN</li>
+
+              </ul>
+              <ul class="plan-info-item">
+                <li><i class="fa-regular fa-circle-check"></i> Đã bao gồm gói "Video & Review"</li>
+                <li><i class="fa-regular fa-circle-check"></i> 20 giờ học trực tiếp (10 buổi) qua google meet cùng giảng
+                  viên</li>
+                <li><i class="fa-regular fa-circle-check"></i> Hỗ trợ học viên xây dựng CV, chia sẻ kinh nghiệm phỏng
+                  vấn, kết nối việc làm với doanh nghiệp</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-cancel" id="btn-cancel">Cancel</button>
+        <button type="button" class="btn-register">Register</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
